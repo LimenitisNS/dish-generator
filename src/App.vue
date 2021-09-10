@@ -1,10 +1,15 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <dish-form />
   </div>
-  <router-view />
 </template>
+
+<script>
+import DishForm from "@/components/IngredientForm/DishForm";
+export default {
+  components: { DishForm },
+};
+</script>
 
 <style lang="scss">
 #app {
